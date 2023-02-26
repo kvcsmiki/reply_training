@@ -1,8 +1,8 @@
 package com.company;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Developer extends Person{
 
-    ArrayList<String> skills;
+    HashSet<String> skills;
 }
