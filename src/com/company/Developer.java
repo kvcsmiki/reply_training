@@ -10,4 +10,14 @@ public class Developer extends Person{
         super(company, bonus);
         this.skills = skills;
     }
+
+    @Override
+    public String toString() {
+        return "Developer{" +
+                "skills=" + skills +
+                ", company='" + company + '\'' +
+                ", bonus=" + bonus +
+                ", isSit=" + isSit +
+                '}';
+    }
 }

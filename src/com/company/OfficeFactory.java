@@ -20,10 +20,11 @@ public class OfficeFactory {
             String firstLine = file.readLine();
             int width = Integer.parseInt(firstLine.split(" ")[0]);
             int height = Integer.parseInt(firstLine.split(" ")[1]);
-            this.desks = new Desk[width][height];
+            this.desks = new Desk[height][width];
             for(int i=0;i<height;i++){
                 String[] line = file.readLine().split("");
                 for(int j = 0; j < line.length; j++){
+                    desks[i][j] = new Desk();
                     desks[i][j].type = typeSelector.selectType(line[j]);
                 }
             }
