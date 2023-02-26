@@ -6,6 +6,8 @@ public abstract class Person {
 
     int bonus;
 
+    boolean isSit;
+
     public Person(String company, int bonus) {
         this.company = company;
         this.bonus = bonus;

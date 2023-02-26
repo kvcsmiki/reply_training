@@ -14,4 +14,13 @@ public class Office {
         this.developers = developers;
         this.managers = managers;
     }
+
+    public void sit(Person person, int x, int y) {
+        Desk currentDesk = this.desks[y][x];
+        if (currentDesk.person != null) {
+            currentDesk.person.isSit = false;
+        }
+        currentDesk.person = person;
+        person.isSit = true;
+    }
 }
